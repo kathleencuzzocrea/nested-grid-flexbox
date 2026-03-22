@@ -6,29 +6,37 @@
     <title>Nested Grid Flexbox</title>
     <link href="css/grid.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/orh2tma.css">
+    <!-- favicon-->
+    <link rel="icon" type="image/x-icon" href="images/logoo.svg">
 </head>
 <body>
+    <h1 class="visually-hidden">Orbitz Homepage</h1>
     <header>
-        <nav class="col-span-full m-col-start-3 m-col-end-12">
-            <div id="burger">
-                <img src="images/burger.svg" alt="burger menu icon">
+        <section class="grid-con center-grid-con" id="header-con">
+            <h2 class="visually-hidden">Orbitz Website Header</h2>
+            <div class="col-span-2 m-col-span-3" id="logo">
+                <img src="images/logoo.svg">
             </div>
-            <ul id="burger-menu">
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/products.html">Products</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Where to Buy</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-
-        <div class="col-start-1 col-end-2 m-col-start-1 m-col-end-3" id="logo">
-            <img src="images/logoo.svg" alt="Orbitz logo">
-        </div>
-
-        <div id="sign-in" class="m-col-start-12 m-col-end-13 center-box">
-                <img src="images/sign-in.svg" alt="sign in profile icon">
+            <nav class="col-start-4 col-end-5 m-col-span-7">
+                <button id="button"></button>
+                <div id="burger-con">
+                    <ul id="nav-links">
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Where to Buy</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="m-col-span-1" id="cart">
+                <img src="images/cart-icon.svg" alt="shopping cart">
             </div>
+            <div class="m-col-span-1" id="pfp">
+                <img src="images/sign-in.svg">
+            </div>
+        </section>
     </header>
     
     <script src="js/main.js"></script>

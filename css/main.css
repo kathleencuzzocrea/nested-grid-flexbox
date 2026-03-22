@@ -1,0 +1,124 @@
+/* --1-- General Rules -----------------------*/
+@font-face {
+    font-family: 'bagel fat';
+    src: url('../fonts/BagelFatOne-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'basic sans', sans-serif;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: 'bagel fat', sans-serif;
+}
+
+.center-box{
+justify-self: center;
+}
+
+#hidden-box{
+   display:none;
+}
+
+/* --2-- Header ----------------------*/
+
+#cart{
+    display: none;
+}
+
+#pfp{
+    display: none;
+}
+
+#button{
+    background: url(../images/burger.svg) center no-repeat;
+    border: 0px;
+    width: 20px;
+    height: 20px;
+    transition: all .5s ease;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+#button button.expanded{
+    transform: rotate(90deg);
+}
+
+#burger-con {
+   margin-top: 20px;
+   display: none;
+   margin-bottom: 20px;
+}
+
+#burger-con.slide-toggle {
+   display: block;
+}
+
+#nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#nav-links li a {
+    display: block;
+    padding: 10px 0 10px 0;
+    text-align: center;
+}
+
+#logo{
+    padding: 50px;
+}
+
+#header-con{
+    align-items: center;
+    background-color: #f1e902;
+}
+
+
+/* --- Tablet Media Queries -------------------------*/
+
+@media screen and (min-width: 768px) {
+    
+    /* Tablet header */
+    #cart{
+        display: block;
+        padding: 15px;
+    }
+
+    #pfp{
+        display: block;
+        padding: 15px;
+    }
+
+    #logo{
+        padding: 15px;
+    }
+    
+    #button{
+        display: none;
+    }
+
+    #burger-con{
+        display: block;
+    }
+
+    #nav-links {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #nav-links li a{
+        text-decoration: none;
+        color: #32327b;
+        transition: 0.2s all ease-in-out;
+        font-size: 18px;
+    }
+
+    #nav-links li a:hover{
+        padding: 5px 0 5px 0;
+    }
+
+}
