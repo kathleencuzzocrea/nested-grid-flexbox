@@ -16,7 +16,7 @@
         <section class="grid-con center-grid-con" id="header-con">
             <h2 class="visually-hidden">Orbitz Website Header</h2>
             <div class="col-span-2 m-col-span-3" id="logo">
-                <img src="images/logoo.svg">
+                <img src="images/logoo.svg" alt="Orbitz logo">
             </div>
             <nav class="col-start-4 col-end-5 m-col-span-7">
                 <button id="button"></button>
@@ -34,10 +34,42 @@
                 <img src="images/cart-icon.svg" alt="shopping cart">
             </div>
             <div class="m-col-span-1" id="pfp">
-                <img src="images/sign-in.svg">
+                <img src="images/sign-in.svg" alt="default profile picture">
             </div>
         </section>
     </header>
+
+    <main>
+        <section class="full-width-grid-con" id="hero">
+            <h2 class="visually-hidden">Hero Section</h2>
+            <img
+            sizes="(max-width: 1980px) 100vw, 1980px"
+            srcset="
+            images/strawberry-3-19_uy9wrc_c_scale,w_300.png 300w,
+            images/strawberry-3-19_uy9wrc_c_scale,w_661.png 661w,
+            images/strawberry-3-19_uy9wrc_c_scale,w_916.png 916w,
+            images/strawberry-3-19_uy9wrc_c_scale,w_1121.png 1121w,
+            images/strawberry-3-19_uy9wrc_c_scale,w_1299.png 1299w,
+            images/strawberry-3-19_uy9wrc_c_scale,w_1464.png 1464w,
+            images/strawberry-3-19_uy9wrc_c_scale,w_1616.png 1616w,
+            images/strawberry-3-19_uy9wrc_c_scale,w_1763.png 1763w,
+            images/strawberry-3-19_uy9wrc_c_scale,w_1893.png 1893w,
+            images/strawberry-3-19_uy9wrc_c_scale,w_1980.png 1980w"
+            src="strawberry-3-19_uy9wrc_c_scale,w_1980.png"
+            alt="Solar Strawberry Orbitz Bottle" id="hero-image">
+
+            <section id="nested-hero-grid" class="grid-con">
+                <div class="col-start-3 col-end-5 m-col-start-7 m-col-end-13" id="hero-text">
+                    <h3>Blast off with Orbitz!</h3>
+                    <p>The drink from the future!</p>
+                </div>
+                <div class="col-start-3 col-end-5 m-col-start-7 m-col-end-13" id="hero-shop-now">
+                    <p><a href="#">Shop Now</a></p>
+                </div>
+            </section>
+            
+        </section>
+    </main>
     
     <script src="js/main.js"></script>
 </body>
